@@ -1,0 +1,24 @@
+{
+  "Name": "RRC WellBore Query CSV",
+  "Type": "WellBore_Query",
+  "Schema": "Bore_Qry",
+  "RootRecordKey": "",
+  "BufferSize": 10000,
+  "RecordLayouts": [
+    {
+      "Name": "BORE_QRY",
+      "Description": "RRC Well Bore Query Data",
+      "RecordKey": "01",
+      "Parent": "None",
+      "Repeats;": "N",
+      "Offsets": [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16,17, 18, 19, 20, 21, 22, 23, 24, 25,26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37,38, 39, 40, 41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59 ],
+      "Attributes": [ "DISTRICT", "COUNTY_CODE", "API_NO", "COUNTY_NAME", "OIL_GAS_CODE", "LEASE_NAME", "FIELD_NUMBER", "FIELD_NAME", "LEASE_NUMBER", "WELL_NO_DISPLAY", "OIL_UNIT_NUMBER", "OPERATOR_NAME", "OPERATOR_NUMBER", "WB_WATER_LAND_CODE", "MULTI_COMP_FLAG", "API_DEPTH", "WB_SHUT_IN_DATE", "WB_14B2_FLAG", "WELL_TYPE_NAME", "WL_SHUT_IN_DATE", "PLUG_DATE", "PLUG_LEASE_NAME", "PLUG_OPERATOR_NAME", "RECENT_PERMIT", "RECENT_PERMIT_LEASE_NAME", "RECENT_PERMIT_OPERATOR_NO", "ON_SCHEDULE", "OG_WELLBORE_EWA_ID", "W2_G1_FIELD_DATE", "W2_G1_DATE", "COMPLETION_DATE", "W3_FILE_DATE", "CREATED_BY", "CREATED_DT", "MODIFIED_BY", "MODIFIED_DT", "WELL_NO", "P5_RENEWAL_MONTH", "P5_RENEWAL_YEAR", "P5_ORG_STATUS", "CURR_INACT_YRS", "CURR_INACT_MOS", "W14B2_EXT_STATUS", "WL14B2_MECH_INTEG", "WL_14B2_PLG_ORD_SF", "WL_14B2_POLLUTION", "WL_14B2_FLDOPS_HOLD", "WL_14B2_H15_PROB", "WL_14B2_H15_DELQ", "WL_14B2_OPER_DELQ", "WL_14B2_DIST_SFP", "WL_14B2_DIST_SF_CLNUP", "WL_14B2_DIST_ST_PLG", "WL_14B2_GOOD_FAITH", "WL_14B2_WELL_OTHER", "SURF_EQP_VIOL", "W3X_VIOL", "H15_STATUS_CODE", "ORIG_COMPLETION_DT" ],
+      "AttributeType": [ "Str", "Int", "Int", "Str", "Str", "Str", "Int", "Str", "Int", "Str", "Str", "Str", "Str", "Str", "Str", "Str", "Str", "Str", "Str", "date1", "date1", "Str", "Str", "Str", "Str", "Str", "Str", "Int", "date1", "date1", "date1", "Str", "Str", "date1", "Str", "date1", "Str", "Int", "Int", "Str", "Int", "Int", "Str", "Str", "Str", "Str", "Str", "Str", "Str", "Str", "Str", "Str", "Str", "Str", "Str", "Str", "Str", "Str", "date1" ],
+      "Primary_Key": "BORE_ID",
+      "Foreign_Key": "None",
+      "RecordLength": 0,
+      "Root_Key": "None",
+      "Root": "None"
+    }
+  ]
+}

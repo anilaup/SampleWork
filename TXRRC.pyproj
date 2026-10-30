@@ -1,0 +1,137 @@
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>b9ffa37c-72b4-4fac-8cad-6843f4bbc2a6</ProjectGuid>
+    <ProjectHome>
+    </ProjectHome>
+    <StartupFile>MainScript.py</StartupFile>
+    <SearchPath>
+    </SearchPath>
+    <WorkingDirectory>.</WorkingDirectory>
+    <OutputPath>.</OutputPath>
+    <Name>TXRRC</Name>
+    <RootNamespace>PythonApplication1</RootNamespace>
+    <SuppressEnvironmentCreationPrompt>True</SuppressEnvironmentCreationPrompt>
+    <InterpreterId>MSBuild|TXRRC|$(MSBuildProjectFullPath)</InterpreterId>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="db\DBScriptGenerator.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="db\DBUtil.py" />
+    <Compile Include="db\__init__.py" />
+    <Compile Include="files\DataFile.py" />
+    <Compile Include="parser\CSVDataRecord.py" />
+    <Compile Include="parser\MFTapeDataRecord.py" />
+    <Compile Include="parser\DataRecord.py" />
+    <Compile Include="parser\BaseRecordCollection.py" />
+    <Compile Include="parser\RRCCsvRecordCollection.py" />
+    <Compile Include="parser\RRCTapeRecordCollection.py" />
+    <Compile Include="files\Scanner.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="files\__init__.py" />
+    <Compile Include="layout\__init__.py" />
+    <Compile Include="GenerateScript.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="parser\RecordFactory.py" />
+    <Compile Include="utils\logging.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="mail\__init__.py" />
+    <Compile Include="MainScript.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="parser\__init__.py" />
+    <Compile Include="utils\Configuration.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="layout\LayoutCollection.py" />
+    <Compile Include="layout\LayoutHelper.py" />
+    <Compile Include="settings\__init__.py" />
+    <Compile Include="utils\Sequence.py">
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Data\Processed\" />
+    <Folder Include="Data\Processed\Full_WellBore\" />
+    <Folder Include="Data\Raw\" />
+    <Folder Include="Data\Raw\Full_Wellbore\" />
+    <Folder Include="db\" />
+    <Folder Include="files\" />
+    <Folder Include="mail\" />
+    <Folder Include="layout\" />
+    <Folder Include="Data\" />
+    <Folder Include="utils\" />
+    <Folder Include="parser\" />
+    <Folder Include="settings\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Data\Processed\Full_WellBore\WB14B2.csv" />
+    <Content Include="Data\Processed\Full_WellBore\WB14B2RM.csv" />
+    <Content Include="Data\Processed\Full_WellBore\WBCASE.csv" />
+    <Content Include="Data\Processed\Full_WellBore\WBCOMPL.csv" />
+    <Content Include="Data\Processed\Full_WellBore\WBDATE.csv" />
+    <Content Include="Data\Processed\Full_WellBore\WBDRILL.csv" />
+    <Content Include="Data\Processed\Full_WellBore\WBDSTAT.csv" />
+    <Content Include="Data\Processed\Full_WellBore\WBFORM.csv" />
+    <Content Include="Data\Processed\Full_WellBore\WBFRESH.csv" />
+    <Content Include="Data\Processed\Full_WellBore\WBH15.csv" />
+    <Content Include="Data\Processed\Full_WellBore\WBH15RMK.csv" />
+    <Content Include="Data\Processed\Full_WellBore\WBLINE.csv" />
+    <Content Include="Data\Processed\Full_WellBore\WBNEWLOC.csv" />
+    <Content Include="Data\Processed\Full_WellBore\WBOLDLOC.csv" />
+    <Content Include="Data\Processed\Full_WellBore\WBPERF.csv" />
+    <Content Include="Data\Processed\Full_WellBore\WBPLCASE.csv" />
+    <Content Include="Data\Processed\Full_WellBore\WBPLNAME.csv" />
+    <Content Include="Data\Processed\Full_WellBore\WBPLPERF.csv" />
+    <Content Include="Data\Processed\Full_WellBore\WBPLREC.csv" />
+    <Content Include="Data\Processed\Full_WellBore\WBPLRMKS.csv" />
+    <Content Include="Data\Processed\Full_WellBore\WBPLUG.csv" />
+    <Content Include="Data\Processed\Full_WellBore\WBRMKS.csv" />
+    <Content Include="Data\Processed\Full_WellBore\WBROOT.csv" />
+    <Content Include="Data\Processed\Full_WellBore\WBSB126.csv" />
+    <Content Include="Data\Processed\Full_WellBore\WBSQEZE.csv" />
+    <Content Include="Data\Processed\Full_WellBore\WBTUBE.csv" />
+    <Content Include="Data\Processed\Full_WellBore\WBW3C.csv" />
+    <Content Include="Data\Processed\Full_WellBore\WBWELLID.csv" />
+    <Content Include="Data\Raw\Full_Wellbore\dbf900.txt" />
+    <Content Include="Data\RRRCIntegration.pptx" />
+    <Content Include="requirements.txt" />
+    <Content Include="settings\config.ini" />
+    <Content Include="settings\WellBore_Query.json" />
+    <Content Include="settings\Full_Wellbore.json" />
+    <Content Include="settings\UIC_Database.json" />
+  </ItemGroup>
+  <ItemGroup>
+    <Interpreter Include="TXRRC\">
+      <Id>TXRRC</Id>
+      <Version>0.0</Version>
+      <Description>TXRRC (Python 3.10 (64-bit))</Description>
+      <InterpreterPath>Scripts\python.exe</InterpreterPath>
+      <WindowsInterpreterPath>Scripts\pythonw.exe</WindowsInterpreterPath>
+      <PathEnvironmentVariable>PYTHONPATH</PathEnvironmentVariable>
+      <Architecture>X64</Architecture>
+    </Interpreter>
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
+  <!-- Uncomment the CoreCompile target to enable the Build command in
+       Visual Studio and specify your pre- and post-build commands in
+       the BeforeBuild and AfterBuild targets below. -->
+  <!--<Target Name="CoreCompile" />-->
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+</Project>
